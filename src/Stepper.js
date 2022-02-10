@@ -32,7 +32,7 @@ export default function HorizontalNonLinearStepper() {
     dispatch({ type: "initialize" });
   }, []);
 
-  // Persist to Database When Step is Changed
+  // Persist to Database When Component Unmounts
   React.useEffect(() => {
     return function persistStageToDB() {
       console.log("STEPPER UNMOUNTING - SAVE! SAVE! SAVE!");
